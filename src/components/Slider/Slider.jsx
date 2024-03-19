@@ -1,34 +1,43 @@
- import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Slider.module.css';
+
+import image_1 from '../../public/sneaker_1.jpg';
+import image_3 from '../../public/sneaker_3.jpg';
+import image_4 from '../../public/sneaker_4.jpg';
+import image_5 from '../../public/sneaker_5.png';
+import image_7 from '../../public/sneaker_7.jpg';
+import image_8 from '../../public/sneaker_8.jpg';
+
+
 
 const slidesData = [
     {
-      image: 'https://i.ibb.co/qCkd9jS/img1.jpg',
+      image: image_3,
       name: 'Switzerland',
       description: '1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
     {
-      image: 'https://i.ibb.co/jrRb11q/img2.jpg',
+      image: image_7,
       name: 'Finland',
       description: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
     {
-      image: 'https://i.ibb.co/NSwVv8D/img3.jpg',
+      image: image_8,
       name: 'Iceland',
       description: '3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
     {
-      image: 'https://i.ibb.co/Bq4Q0M8/img4.jpg',
+      image: image_5,
       name: 'Australia',
       description: '4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
     {
-      image: 'https://i.ibb.co/jTQfmTq/img5.jpg',
+      image: image_4,
       name: 'Netherland',
       description: '5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
     {
-      image: 'https://i.ibb.co/RNkk6L0/img6.jpg',
+      image: image_1,
       name: 'Ireland',
       description: '6 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
     },
@@ -59,12 +68,13 @@ const slidesData = [
             <div
               key={index}
               className={`${styles.item} ${index === currentIndex ? styles.active : ''}`}
-              style={{ backgroundImage: `url(${slide.image})` }}
+              //style={{ backgroundImage: `url(${slide.image})` }}
+              //style={{ backgroundImage: `url(${br.src})` }}
+              style={{ backgroundImage: `url(${slide.image.src})` }}  
             >
               <div className={styles.content}>
                 <div className={styles.name}>{slide.name}</div>
                 <div className={styles.des}>{slide.description}</div>
-                <button>See More</button>
               </div>
             </div>
           ))}
