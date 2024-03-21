@@ -4,31 +4,50 @@
 }
 
 .container .slide .item {
-  width: 275px;
+  /* width: 275px;
   height: 550px;
+ */
+ /*  border-radius: 30px; */
+ /*  background-position: 50% 50%; */
+/*  background-size: cover; */
+ /*  display: inline-block; */
 
   position: absolute;
-
   top: 50%;
-
   transform: translate(0, -50%);
-  border-radius: 30px;
   box-shadow: 0 7px 25px #212020;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: inline-block;
   transition: 0.5s;
+  
+ 
 }
+
+/* .slide .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; // Ширина контейнера изображения 
+  height: 300px; // Высота контейнера изображения 
+  overflow: hidden; // Обрезать изображение, которое выходит за пределы контейнера 
+}*/
+ 
+.slide .item img {
+ /*  width: 100%; 
+  height: 100%;  */
+  object-fit: cover; /* Сохранить пропорции изображения, заполняя контейнер без искажений */
+}
+
 
 .slide .item:nth-child(1),
 .slide .item:nth-child(2) {
   top: 0;
   left: 0;
   transform: translate(0, 0);
-  border-radius: 0;
   width: 100%;
   height: 100%;
+  
   box-shadow: none;
+  border-radius: 0;
 }
 
 .slide .item:nth-child(3) {
@@ -36,11 +55,30 @@
   height: 78%;
   width: 200px;
   top: 52%;
+  
 }
+
+/* .slide .item img:nth-child(4){
+  object-position: 60% 50%;
+} */
+
+.positionImg {
+  object-position: 68%;
+}
+
+.specialPositionImg {
+  object-position: 19%;
+}
+
+
+
+
 .slide .item:nth-child(4) {
   left: 84%;
   height: 90%;
   width: 200px;
+  /* object-position: -90px; */
+  /* object-position: 50% 50% */
 }
 
 /* .slide .item:nth-child(5) {
@@ -56,6 +94,7 @@
 
 .slide .item:nth-child(n + 3) {
   border: 2px solid #ffffff;
+  /* object-position: 50% 50% */
 }
 
 
@@ -90,13 +129,13 @@
   animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.content button {
+/* .content button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   opacity: 0;
   animation: animate 1s ease-in-out 0.6s 1 forwards;
-}
+} */
 
 @keyframes animate {
   from {
