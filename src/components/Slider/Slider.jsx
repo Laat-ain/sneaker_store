@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./Slider.module.css";
 import Image from "next/image";
 
@@ -60,6 +60,16 @@ const Slider = () => {
       (prevIndex) => (prevIndex - 1 + slidesData.length) % slidesData.length
     );
   };
+
+  // Используйте useEffect для запуска автоматической анимации через 3 секунды
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext(); // Вызываем функцию для переключения на следующий слайд
+    }, 4500); // Здесь 3000 миллисекунд - это 3 секунды
+
+    return () => clearInterval(interval); // Очищаем интервал при размонтировании компонента
+  }, []); // Пустой массив зависимостей означает, что эффект будет запускаться только при монтировании компонента
+
 
   return (
     <div className={styles.container}>
