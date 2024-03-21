@@ -1,0 +1,38 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.questions {
+  list-style: none;
+  padding: 0;
+}
+
+.question {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.answer {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.answer.show {
+  max-height: 300px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginTop50 {
+  margin-top: 50px;
+}

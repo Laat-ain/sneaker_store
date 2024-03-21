@@ -2,6 +2,8 @@ import Head from "next/head";
 import React from "react";
 import Link from "next/link";
 import Slider from "../components/Slider/Slider";
+import ProductLinks from "../components/ProductLinks/ProductLinks";
+import Questions from "../components/Questions/Questions";
 
 /* Домашнаяя страница */
 const Home = () => (
@@ -16,19 +18,10 @@ const Home = () => (
 
     <main>
       <div className="container">
+        {/* добавить props */}
         <Slider/>
-        
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-        <h1>Добро пожаловать на стартовую страницу</h1>
-
+        <ProductLinks/>
+        <Questions/>
       </div>
     </main>
   </>

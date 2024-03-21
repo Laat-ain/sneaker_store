@@ -13,33 +13,33 @@ import image_8 from '../../public/sneaker_8.jpg';
 const slidesData = [
     {
       image: image_3,
-      name: 'Switzerland',
-      description: '1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 1",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
     {
       image: image_7,
-      name: 'Finland',
-      description: '2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 2",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
     {
       image: image_8,
-      name: 'Iceland',
-      description: '3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 3",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
     {
       image: image_5,
-      name: 'Australia',
-      description: '4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 4",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
     {
       image: image_4,
-      name: 'Netherland',
-      description: '5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 5",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
     {
       image: image_1,
-      name: 'Ireland',
-      description: '6 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!',
+      name: "Lorem 6",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolore tenetur exercitationem modi sapiente. Illo vel adipisci in ipsa sapiente! Nesciunt accusamus, atque deserunt est dicta repellendus fugiat obcaecati ad!"
     },
   ];
 

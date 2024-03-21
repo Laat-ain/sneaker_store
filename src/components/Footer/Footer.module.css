@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mr20{
+    margin-right: 20px;
+}
+
+.mt50{
+    margin-top: 50px;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import styles from "./Navigation.module.css";
+import styles from "./Header.module.css";
 
 /* пункты меню в шапке */
 const navItems = [
@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 
-const Navigation = () => {
+const Header = () => {
   // состояние (стейт) для активного пункта меню
   const [activeLink, setActiveLink] = useState("");
 
@@ -92,4 +92,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Header;

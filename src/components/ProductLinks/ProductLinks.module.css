@@ -1,0 +1,18 @@
+.productLinks{
+    display: flex;
+    transform: translate(37%);
+    width: 800px;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.woman{
+    background: blueviolet;
+    height: 100%;
+    width: 50%;
+}
+.man{
+    background: aqua;
+    height: 100%;
+    width: 50%;
+}
