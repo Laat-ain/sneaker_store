@@ -5,6 +5,11 @@ import Slider from "../components/Slider/Slider";
 import ProductLinks from "../components/ProductLinks/ProductLinks";
 import Questions from "../components/Questions/Questions";
 
+const navProductLinks = [
+  { name: "men", text: "Мужчинам" },
+  { name: "woman", text: "Женщинам" },
+]
+
 /* Домашнаяя страница */
 const Home = () => (
   <>
@@ -20,7 +25,8 @@ const Home = () => (
       <div className="container">
         {/* добавить props */}
         <Slider/>
-        <ProductLinks/>
+        {/* посмотреть позже, т.к. там изображение */}
+        <ProductLinks /> 
         <Questions/>
       </div>
     </main>

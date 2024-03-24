@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
+  color: black;
+  /* background: #b2d2e8;
+  color: #a51f1f; */
+  background: #ffffff;
+  font-size: 19px;
+  font-family: cursive;
 }
 
 .container {
@@ -11,18 +17,11 @@ body {
   margin: 0 auto;
 }
 
-.navHeader{
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo{
+/* .logo{
   position: relative;
   right: 64px;
+} */
+
+a {
+  cursor: pointer;
 }
-
-
-
-
-
-

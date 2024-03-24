@@ -62,15 +62,15 @@ const Slider = () => {
   };
 
   // Используйте useEffect для запуска автоматической анимации через 3 секунды
-  useEffect(() => {
+  /* useEffect(() => {
     const interval = setInterval(() => {
       handleNext(); // Вызываем функцию для переключения на следующий слайд
-    }, 4500); // Здесь 3000 миллисекунд - это 3 секунды
+    }, 8500); // Здесь 3000 миллисекунд - это 3 секунды
 
     return () => clearInterval(interval); // Очищаем интервал при размонтировании компонента
   }, []); // Пустой массив зависимостей означает, что эффект будет запускаться только при монтировании компонента
 
-
+ */
   return (
     <div className={styles.container}>
       <div ref={slideRef} className={styles.slide}>
@@ -86,9 +86,11 @@ const Slider = () => {
               alt={slide.name}
               fill={true}
               //className={styles.img}
-              className={slide.imagePath === "/slider/sneaker_2.jpg"?styles.specialPositionImg:styles.positionImg}
-
-              
+              className={
+                slide.imagePath === "/slider/sneaker_2.jpg"
+                  ? styles.specialPositionImg
+                  : styles.positionImg
+              }
             />
             <div className={styles.content}>
               <div className={styles.name}>{slide.name}</div>
@@ -100,10 +102,20 @@ const Slider = () => {
 
       <div className={styles.button}>
         <button className={styles.prev} onClick={handlePrev}>
-          Назад
+          <Image
+            src="/svg/arrow--left.svg"
+            alt="arrow--left"
+            width="70"
+            height="70"
+          />
         </button>
         <button className={styles.next} onClick={handleNext}>
-          Вперёд
+          <Image
+            src="/svg/arrow--right.svg"
+            alt="arrow--right"
+            width="70"
+            height="70"
+          />
         </button>
       </div>
     </div>
