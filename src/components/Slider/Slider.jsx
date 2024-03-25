@@ -62,7 +62,7 @@ const Slider = () => {
   };
 
   // Используйте useEffect для запуска автоматической анимации через 3 секунды
-  /* useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       handleNext(); // Вызываем функцию для переключения на следующий слайд
     }, 8500); // Здесь 3000 миллисекунд - это 3 секунды
@@ -70,7 +70,7 @@ const Slider = () => {
     return () => clearInterval(interval); // Очищаем интервал при размонтировании компонента
   }, []); // Пустой массив зависимостей означает, что эффект будет запускаться только при монтировании компонента
 
- */
+
   return (
     <div className={styles.container}>
       <div ref={slideRef} className={styles.slide}>
