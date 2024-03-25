@@ -13,17 +13,17 @@ const MainLayout = ({ children }) => {
     <Image src="/svg/like.svg" alt="Like" height="28" width="28"  />
   );
   const svgShoppingСart = (
-    <Image src="/svg/shoppingСart.svg" alt="ShoppingСart" width="32" height="36" />
+    <Image src="/svg/shoppingСart.svg" alt="ShoppingСart" width="28" height="28" />
   );
   const svgDMode = (
-    <Image src="/svg/dMode.svg" alt="gDMode" width="36" height="36" />
+    <Image src="/svg/dMode.svg" alt="gDMode" width="28" height="28" />
   );
   const svgNMode = (
-    <Image src="/svg/nMode.svg" alt="NMode" width="22" height="28" />
+    <Image src="/svg/nMode.svg" alt="NMode" width="28" height="28" />
   );
 
   const navItemsHeader = [
-    { type: "leftEdge", name: "men", text: "Мужчинам" },
+    { type: "leftEdge", name: "man", text: "Мужчинам" },
     { type: "leftEdge", name: "woman", text: "Женщинам" },
     { type: "leftEdge", name: "about", text: "Другое" },
 

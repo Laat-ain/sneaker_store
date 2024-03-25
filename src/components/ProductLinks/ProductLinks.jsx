@@ -1,29 +1,51 @@
 import React from "react";
-import { useState } from "react";
-import { useRouter } from "next/router";
 import styles from "./ProductLinks.module.css";
 import Navigation from "../Navigation/Navigation";
+import Image from "next/image";
 
 const ProductLinks = ({ navLinks }) => {
-  /* const navProductLinks = [
-    { name: "men", text: "Мужчинам" },
-    { name: "woman", text: "Женщинам" },
-  ]
-   */
+  const navProductLinks = [
+    {
+      name: "man",
+      imagePathSneaker: "/productLinks/man_sneaker.jpg",
+      imagePathProfile: "/productLinks/male_profile.png",
+    },
+    {
+      name: "woman",
+      imagePathSneaker: "/productLinks/woman_sneaker.jpg",
+      imagePathProfile: "/productLinks/female_profile.png",
+    },
+  ];
+
   return (
     <>
       <div className={styles.productLinks}>
-        <div className={styles.woman}>
-          <Navigation /* key={index}  */ name="men" text="Мужчинам" />
-          {/* <a onClick={() => onClickHandler("/catalog")}>woman</a> */}
-        </div>
-        <div className={styles.man}>
-          <Navigation /* key={index} */ name="woman" text="Женщинам" />
-          {/* <a onClick={() => onClickHandler("/catalog")}>man</a> */}
-        </div>
+        {navProductLinks.map((navProductLink, index) => (
+          <div className={styles.body} key={index}>
+            <Navigation name={navProductLink.name}>
+              <div className={styles.images}>
+                <Image
+                  src={navProductLink.imagePathSneaker}
+                  alt={navProductLink.name}
+                  width={400}
+                  height={400}
+                  className={styles.bgImage}
+                />
+                <Image
+                  src={navProductLink.imagePathProfile}
+                  alt={navProductLink.name}
+                  width={400}
+                  height={400}
+                  className={styles.frontImage}
+                />
+              </div>
+            </Navigation>
+          </div>
+        ))}
       </div>
     </>
   );
 };
 
 export default ProductLinks;
+

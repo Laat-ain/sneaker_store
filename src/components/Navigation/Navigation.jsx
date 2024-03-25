@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 const navItems = [
-  { name: "men", path: "/catalog" },
+  { name: "man", path: "/catalog" },
   { name: "woman", path: "/catalog" },
   { name: "about", path: "#" },
   { name: "logoSite", path: "/" },
@@ -11,7 +11,7 @@ const navItems = [
 
 // компонент для навигации
 
-const Navigation = ({ index, name, text }) => {
+const Navigation = ({ index, name, text, children }) => {
   // состояние (стейт) для активного пункта меню
   const [activeLink, setActiveLink] = useState("");
 
@@ -31,7 +31,8 @@ const Navigation = ({ index, name, text }) => {
   return (
     <>
       <a key={index} onClick={() => onClickHandler(selectedItem.path)}>
-        {text}
+        { text }
+        {children}
       </a>
     </>
   );
