@@ -7,6 +7,11 @@ let navItems = [
   { name: "about", path: "#" },
   { name: "logoSite", path: "/" },
   { name: "like", path: "/like" },
+
+  { name: "VK", path: "https://vk.com/?ysclid=lu9hvtg78c414253136" },
+  { name: "TG", path: "https://web.telegram.org/a/" },
+  { name: "АВИТО", path: "https://www.avito.ru/?ysclid=lu9hx0xot0992803577" },
+
   { name: "product", path: "" }, // Изначально пустой путь
 ];
 
@@ -53,25 +58,3 @@ const Navigation = ({ index, name, text, vendorCode, children }) => {
 };
 
 export default Navigation;
-
-/* import { useRouter } from "next/router";
-
-const Navigation = ({ name, text, children }) => {
-  const router = useRouter();
-
-  const onClickHandler = () => {
-    router.push({
-      pathname: `/product/${name}`, // Переход на страницу с соответствующим productId
-      query: { productId: name }, // Передача параметра productId
-    });
-  };
-
-  return (
-    <div onClick={onClickHandler}>
-      {text}
-      {children}
-    </div>
-  );
-};
-
-export default Navigation; */

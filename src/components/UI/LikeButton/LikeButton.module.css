@@ -1,0 +1,12 @@
+.svgLike {
+   
+    width: 33px;
+    height: 33px;
+    border: none;
+    background: transparent;
+}
+
+.liked {
+    /* fill: #c123cf */
+    background: turquoise;
+}

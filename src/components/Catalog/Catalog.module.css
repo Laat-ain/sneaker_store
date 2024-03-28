@@ -10,14 +10,84 @@
 }
 
 .product {
-  padding: 20px;
-  border: 1px solid #ccc;
-  text-align: center;
+  padding: 7px;
+  text-align: left;
+  position: relative;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 
 .product img {
-  max-width: 100%;
   height: auto;
+  width: 100%;
+}
+
+.productCardDescription {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.productCardDescription span {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.typeProductDescription {
+  margin-top: 10px;
+}
+
+.typeProductDescription p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.like,
+.like .svgLike {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: none;
+  /*   background: transparent; */
+}
+
+.like {
+  top: 18px;
+  right: 18px;
+}
+
+.like .svgLike {
+  top: 0;
+  right: 0;
+}
+
+.hiddenElements {
+  display: none;
+  /* background-color: #fff; */
+}
+
+.product:hover .hiddenElements {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiddenElements p {
+  margin-bottom: 5px;
+}
+
+.hiddenElements button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hiddenElements button:hover {
+  background-color: #0056b3;
 }
 
 .pagination {
@@ -38,4 +108,9 @@
 .pagination .active {
   background-color: #007bff;
   color: #fff;
+}
+
+.likedd {
+  /* fill: #c123cf */
+  background: turquoise;
 }

@@ -10,10 +10,15 @@ const MainLayout = ({ children }) => {
     <Image src="/svg/logo.svg" alt="logo" width="180" height="20" />
   );
   const svgLike = (
-    <Image src="/svg/like.svg" alt="Like" height="28" width="28"  />
+    <Image src="/svg/like.svg" alt="Like" height="28" width="28" />
   );
   const svgShoppingСart = (
-    <Image src="/svg/shoppingСart.svg" alt="ShoppingСart" width="28" height="28" />
+    <Image
+      src="/svg/shoppingСart.svg"
+      alt="ShoppingСart"
+      width="28"
+      height="28"
+    />
   );
   const svgDMode = (
     <Image src="/svg/dMode.svg" alt="gDMode" width="28" height="28" />
@@ -34,11 +39,20 @@ const MainLayout = ({ children }) => {
     { type: "rightEdge", name: "d/nMode", text: svgNMode },
   ];
 
+  const navItemsFooter = [
+    { type: "leftEdge", name: "logoSite", text: svgLogo },
+    { type: "leftEdge", name: "text", text: "C Inventive Retail Group, 2024" },
+
+    { type: "rightEdge", name: "VK", text: "VK" },
+    { type: "rightEdge", name: "TG", text: "TG" },
+    { type: "rightEdge", name: "АВИТО", text: "АВИТО" },
+  ];
+
   return (
     <>
       <Header navItems={navItemsHeader} />
       <div>{children}</div>
-      <Footer />
+      <Footer navItems={navItemsFooter} />
       <ScrollToTopButton />
     </>
   );

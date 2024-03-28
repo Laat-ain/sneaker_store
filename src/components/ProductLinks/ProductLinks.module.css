@@ -1,32 +1,77 @@
 .productLinks {
-    display: flex;
-    width: 830px;
-    margin: 0 auto;
-    margin-top: 30px;
-    height: 400px;
-    justify-content: space-between;
+  display: flex;
+  width: 830px;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 400px;
+  justify-content: space-between;
 }
 
 .images {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
 }
 
-.bgImage, .frontImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 400px;
-    transition: opacity 0.3s ease;
+.bgImage,
+.frontImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transition: opacity 0.3s ease;
 }
 
 .frontImage {
-    opacity: 0;
+  opacity: 0;
 }
 
 .images:hover .frontImage {
-    opacity: 1;
+  opacity: 1;
 }
+
+.caption {
+  opacity: 0;
+}
+
+.images:hover .caption {
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 17px;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.body {
+  perspective: 1000px;
+}
+
+.man:hover,
+.woman:hover {
+  rotate: x -3deg;
+}
+
+.man,
+.woman {
+  transition: rotate 400ms ease;
+}
+
+.man::before,
+.woman::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: radial-gradient(circle, transparent 200px, #807a7a);
+  opacity: 1;
+}
+
+/* .man:hover::before,
+.woman:hover::before {
+    opacity: 1;
+} */

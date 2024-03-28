@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import styles from './ScrollToTopButton.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "./ScrollToTopButton.module.css";
+import Image from "next/image";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,21 +14,24 @@ const ScrollToTopButton = () => {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
 
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
   return (
-    <div className={`${styles.scrollButton} ${isVisible ? styles.visible : ''}`} onClick={scrollToTop}>
-      <i className="fas fa-arrow-up"> ^ </i>
+    <div
+      className={`${styles.scrollButton} ${isVisible ? styles.visible : ""}`}
+      onClick={scrollToTop}
+    >
+      <Image src="/svg/topButton.svg" alt="gDMode" width="32" height="32" />
     </div>
   );
 };
