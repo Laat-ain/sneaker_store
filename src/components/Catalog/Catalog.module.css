@@ -1,12 +1,13 @@
-.container {
+/* .container {
   max-width: 960px;
   margin: 0 auto;
-}
+} */
 
 .productGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  justify-items: center;
 }
 
 .product {
@@ -14,6 +15,9 @@
   text-align: left;
   position: relative;
   transition: box-shadow 0.3s, transform 0.3s;
+  justify-items: center;
+
+  background: #bdcaca;
 }
 
 .product:hover {
@@ -26,11 +30,10 @@
   width: 100%;
 }
 
-.productCardDescription {
+/* .productCardDescription {
   position: relative;
-  margin-bottom: 20px;
 }
-
+ */
 .productCardDescription span {
   font-size: 26px;
   font-weight: bolder;
@@ -72,6 +75,7 @@
 .product:hover .hiddenElements {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .hiddenElements p {
@@ -79,36 +83,18 @@
 }
 
 .hiddenElements button {
-  padding: 5px 10px;
+  padding: 12px 10px;
   border: none;
-  background-color: #007bff;
+  background-color: #373738;
   color: #fff;
   cursor: pointer;
 }
 
 .hiddenElements button:hover {
-  background-color: #0056b3;
+  background-color: #1b1b1b;
 }
 
-.pagination {
-  margin-top: 20px;
-}
 
-.pagination span {
-  cursor: pointer;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  margin-right: 5px;
-}
-
-.pagination span:hover {
-  background-color: #f0f0f0;
-}
-
-.pagination .active {
-  background-color: #007bff;
-  color: #fff;
-}
 
 .likedd {
   /* fill: #c123cf */
